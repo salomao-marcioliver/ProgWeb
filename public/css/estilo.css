@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: 0;
+  outline: 0;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+/* Cabeçalho */
+#menu {
+  width: 100%;
+  height: 40px;
+  background: #005eff;
+  color: white;
+  line-height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  float: center;
+}
+#menu li {
+  list-style: none;
+  display: inline;
+  padding: 1.5%;
+  margin-left: 4%;
+}
+#logo {
+  width: auto;
+  height: 40px;
+  float: left;
+}
+/* Banner*/
+#banner {
+  width: 100%;
+  height: 250px;
+}
+#ft-banner img {
+  width: auto;
+  height: 250px;
+  float: right;
+}
+#texto {
+  width: 70%;
+  height: 250px;
+  float: left;
+}
+#inicio {
+  margin-top: 3%;
+}
+#txt1 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+h2 {
+  margin-top: 1%;
+  font-size: 20px;
+  text-align: center;
+}
+#botoes {
+  margin-top: 3%;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.btn-gplay,
+.btn-astore {
+  width: 35%;
+  padding: 0.5%;
+  font-size: 1.5em;
+  text-align: center;
+  margin-left: 3%;
+  border-radius: 10px;
+  background-color: #005eff;
+  color: white;
+}
+/* Quem somos*/
+#quemsomos {
+  width: 100%;
+  height: 250px;
+  background-color: #005eff;
+}
+#info {
+  width: 70%;
+  height: 250px;
+  float: left;
+}
+#info-txt {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 5%;
+  margin-left: 1%;
+}
+#ft-info img {
+  width: auto;
+  height: 250px;
+  float: right;
+}
+/* Serviços */
+#servicos {
+  width: 100%;
+  height: 400px;
+  position: relativo;
+}
+#servicos img {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+}
+#s-info {
+  background-color: white;
+  width: 60%;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+/* Contato */
+#contato {
+  width: 100%;
+  height: 400px;
+  background-color: #005eff;
+}
+#enderecos {
+  width: 50%;
+  height: 400px;
+  float: left;
+}
+
+#cont-txt {
+  width: 100%;
+  color: white;
+  text-align: left;
+  font-size: 25px;
+  margin-top: 1%;
+  margin-left: 8%;
+}
+#cont2-txt {
+  width: 100%;
+  color: white;
+  text-align: left;
+  font-size: 20px;
+  margin-top: 3%;
+  margin-left: 8%;
+}
+.rodape {
+  width: 100%;
+  float: right;
+  margin-top: 2%;
+  padding: 3% 4%;
+  text-align: left;
+}
+.socialicons a {
+  font-size: 1.5em;
+  margin-right: 1%;
+  margin-left: 4%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#form {
+  width: 50%;
+  height: 400px;
+  float: right;
+}
+#form-duvidas {
+  margin-top: 3%;
+  width: 80%;
+  margin-left: 25%;
+}
+label {
+  color: white;
+  text-align: left;
+  font-size: 20px;
+}

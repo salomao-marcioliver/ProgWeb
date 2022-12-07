@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mototáxi Tapajós</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="menu">
+      <img id="logo" src="img/logo.png" alt="logo" />
+      <ul>
+        <li><a href="#banner">Home</a</li>
+        <li><a href="#quemsomos">Quem Somos</a> </li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+    <!--Fim da div menu -->
+
+    <div id="banner">
+      <div id="texto">
+        <div id="inicio">
+          <h1 id="txt1">PRECISANDO DE TRANSPORTE?</h1>
+          <h2>
+            É so chamar um mototáxi. <br />
+            Temos motoristas preparados para atender você!
+          </h2>
+        </div>
+        <!--Fim da div inicio -->
+
+        <div id="botoes">
+					<a href="https://play.google.com/store/apps/details?id=br.com.mototaxitapajos.passenger.taximachine">
+						<button class="btn-gplay">
+							Download no Google Play <i class="fab fa-google-play"></i>
+						</button>
+					</a>
+          <a href="https://itunes.apple.com/br/app/taxi-cidade/id1276674186?l=pt&ls=1&mt=8">
+						<button class="btn-astore">
+							Download na App Store <i class="fab fa-apple"></i>
+						</button>
+					</a>
+          
+        </div>
+        <!--Fim da div botoes -->
+      </div>
+      <!--Fim da div texto -->
+
+      <div id="ft-banner">
+        <img src="img/homem-celular.png" />
+      </div>
+      <!--Fim da div ft banner -->
+    </div>
+    <!--Fim da div banner -->
+
+    <div id="quemsomos">
+      <div id="info">
+        <div id="info-txt">
+          <p>
+            Somos uma aplicativo de transporte de passageiros paraense
+            desenvolvido em conjunto com o sindicato dos mototaxistas do
+            município de Santarém, com objetivo de trazer qualidade conforto e
+            segurança para nossa gente.
+          </p>
+        </div>
+        <!--Fim da div info-txt -->
+      </div>
+      <!--Fim da div info -->
+
+      <div id="ft-info">
+        <img src="img/homem-legal.png" />
+      </div>
+      <!--Fim da div ft-info -->
+    </div>
+
+    <div id="servicos">
+      <img id="ft-servicos" src="img/cidade.jpeg" />
+
+      <label id="s-info">
+        O primeiro e único app de transporte de passageiros no Brasil vinculado
+        ao seu próprio Sindicato. <br />
+        Levando até você um transporte de qualidade com selos confiaveis!
+        <br />
+      </label>
+    </div>
+    <!--Fim da div serviços -->
+
+    <div id="contato">
+      <div id="enderecos">
+        <h1 id="cont-txt">Dúvidas? Contate-nos!</h1>
+        <p id="cont2-txt">
+          Estamos no endereço: <br />
+          Rodovia Santarém-Curua-Una, 750 - Santíssimo <br />
+          Santarém - PA <br />
+          <br />
+          Telefone: (93) 99170-2695
+        </p>
+        <div class="rodape">
+          <div class="socialicons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+          <!--Fim da div socialicons -->
+        </div>
+        <!--Fim da div rodape -->
+      </div>
+      <!--Fim da div enderecos -->
+
+      <div id="form">
+        <h2 style="color: white; font-size: 25px">Faça-nos uma pergunta!</h2>
+        <div id="form-duvidas">
+          <form onsubmit="return validateForm()">
+            <fieldset>
+              <label for="nome">
+                <br />
+                Nome completo: <br />
+              </label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome..."
+                size="50"
+              />
+            </fieldset>
+
+            <fieldset>
+              <label for="email">Email: <br /> </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu e-mail..."
+                size="50"
+              />
+            </fieldset>
+            <fieldset>
+              <label for="duvidas">Qual sua dúvida? <br /> </label>
+              <textarea
+                name="text"
+                id="text"
+                cols="59"
+                rows="5"
+                placeholder="Digite sua dúvida..."
+              ></textarea>
+            </fieldset>
+            <div class="botao-enviar">
+              <br />
+              <button type="submit">Enviar sua mensagem</button>
+            </div>
+            <!--Fim da div button -->
+          </form>
+        </div>
+        <!--Fim da div form-duvidas -->
+      </div>
+      <!--Fim da div form -->
+    </div>
+    <!--Fim da div contato -->
+  </body>
+</html>
