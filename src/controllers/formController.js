@@ -1,21 +1,32 @@
-import User from "../models/Form"
+import { conn } from "../database/db.js";
 
-export const home = async(req, res) => {
-    res.render()
+export const getForms = async(req, res) => {
+    const q = "SELECT * FROM form"
+
+    conn.query(q, (err, data) => {
+        if(err){
+            return res.json(err)
+        }else{
+            return res.status(200).json(data);
+        }
+    });
 }
 
-export const addFormAction = async(req, res) => {
-    let newUser = new User()
-    let newName = req.body.name;
-    let newAge = req.body.age;
+export const addForm = (req, res) => {
+    const q = 
+        "INSERT INTO form(`name`, `email`, `questions`) VALUES (?)";
 
-    newUser.name = newName;
-    newUser.age = newAge;
+    const values = [
+        req.body.name,
+        req.body.email,
+        req.body.question
+    ];
 
-    try {
-        await newUser.save();
-        console.log("O formulario foi salvo com sucesso");
-    }catch (error){
-        console.log(`Houve um erro: ${error}`);
-    }
+    conn.query(q, [values], (err) => {
+        if(err){
+            return res.json(err);
+        }else {
+            res.redirect("/");
+        }
+    });
 }

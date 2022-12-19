@@ -116,7 +116,7 @@
       <div id="form">
         <h2 style="color: white; font-size: 25px">Faça-nos uma pergunta!</h2>
         <div id="form-duvidas">
-          <form onsubmit="return validateForm()">
+          <form method="POST" action="/api/add">
             <fieldset>
               <label for="nome">
                 <br />
@@ -124,8 +124,8 @@
               </label>
               <input
                 type="text"
-                id="nome"
-                name="nome"
+                id="name"
+                name="name"
                 placeholder="Digite seu nome..."
                 size="50"
               />
@@ -144,8 +144,8 @@
             <fieldset>
               <label for="duvidas">Qual sua dúvida? <br /> </label>
               <textarea
-                name="text"
-                id="text"
+                name="question"
+                id="question"
                 cols="59"
                 rows="5"
                 placeholder="Digite sua dúvida..."
