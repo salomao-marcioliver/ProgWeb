@@ -4,7 +4,6 @@ import path from 'path'
 import form from './routes/form.js';
 import {fileURLToPath} from 'url'
 import cors from 'cors'
-//import mainRoutes from './routes/index';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
